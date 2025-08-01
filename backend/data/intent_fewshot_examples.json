@@ -1,0 +1,50 @@
+[
+    {
+        "question": "how to cleanup old guest users?.",
+        "category": "How to achieve action"
+    },
+    {
+        "question": "where do I find Logic Apps ?.",
+        "category": "How to achieve action"
+    },
+    {
+        "question": "how can i export all conditional access policies in Microsoft Entra Admin Center.",
+        "category": "How to achieve action"
+    },
+    {
+        "question": "where do i see what permissions are being granted for a enterprise app.",
+        "category": "How to achieve action"
+    },
+    {
+        "question": "What's the best way to audit inactive B2B users?",
+        "category": "How to achieve action"
+    },
+    {
+        "question": "Steps to locate diagnostic settings for Azure resources?",
+        "category": "How to achieve action"
+    },
+    {
+        "question": "Customer ran into error with Failed to create group. Details: Failed to create group NF Dynamic Device Testing. ..",
+        "category": "Help with errors"
+    },
+    {
+        "question": "Customer ran into error with Unable to revoke sessions. Details: Unable to revoke sessions for Mozzetti Antonella because they have a privileged role..",
+        "category": "Help with errors"
+    },
+    {
+        "question": "I get this error: Failed to resolve expression 'status.errorCode'",
+        "category": "Help with errors"
+    },
+    {
+        "question": "AADSTS50105: The signed in user is not assigned a role for the application.",
+        "category": "Help with errors"
+    },
+    {
+        "question": "403 error when trying to call the Graph API for user listing.",
+        "category": "Help with errors"
+    },
+    {
+        "question": "Error creating conditional access policy: Invalid client ID provided.",
+        "category": "Help with errors"
+    }
+]

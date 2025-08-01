@@ -1,0 +1,2994 @@
+[
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "List my access reviews for \"Insights Group Review\""
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get access review abbf44c5-00c8-4b70-b974-60e2ed39bb01 instances where I'm a reviewer"
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get my pending access reviews"
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get all access review definitions"
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get review definition for \"My Review\"?"
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get review decisions against recommendations for instance \"a87ba299-d86a-4e73-b8ae-0c0c36486ce4\" for definition \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\"?"
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get review definition for  \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\"?"
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get review decisions for the active instance for definition \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\""
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get review decisions for the applied or completed instances for definition \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\""
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get review instance \"a87ba299-d86a-4e73-b8ae-0c0c36486ce4\" for definition \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\""
+    },
+    {
+      "workload": "AccessReviews",
+      "customerQuestions": "Get the reviewers for the access review instance \"a87ba299-d86a-4e73-b8ae-0c0c36486ce4\" in the review definition  \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\""
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which users are the owners for application 98765abc-de12-3456-a123-456789abcdef?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Who owns app 11223344-5566-7788-99aa-bbccddeeff00?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Get all service Principals"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "What enterprise apps are in my tenant?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Who owns the service principal 11223344-5566-7788-99aa-bbccddeeff00?"
+    },
+    {
+      "workload": "",
+      "customerQuestions": "Find the application ID of HR Onboarding Portal."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me all apps that have 'Box' in the name."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Find the id of HR Onboarding portal service principal"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me enterprise apps that have 'Box' in the name."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which permissions does the service principal 55aa4433-22bb-11ec-8529-0242ac130003 have?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which high privilege permissions does the service principal 55aa4433-22bb-11ec-8529-0242ac130003 have?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "What roles and scopes are assigned to service principal 55aa4433-22bb-11ec-8529-0242ac130003?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me all the delegated permissions for service principal 55aa4433-22bb-11ec-8529-0242ac130003."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Do we have any applications in our tenant that currently have no designated owner?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "List all ownerless apps across the organization."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Do we have any service principals in our tenant that currently have no designated owner?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "List all ownerless service principals across the organization."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Are there enterprise applications without owners?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "What objects has the service principal 99331144-5566-7788-99aa-bb1234eeff99 created?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me the items created by service principal with id 99331144-5566-7788-99aa-bb1234eeff99"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which resources are owned by service principal 55bb6644-ccdd-44ee-99aa-ff1122334455?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me all the objects owned by service principal with id 99331144-5566-7788-99aa-bb1234eeff99"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which applications are owned by user Sarmis Celms?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me all the apps owned by user with id 99331144-5566-7788-99aa-bb1234eeff99"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "List the applications that Sarmis Celms owns"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which Service Principals are owned by user Sarmis Celms?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me all the enterprise apps owned by user with id 99331144-5566-7788-99aa-bb1234eeff99"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which applications are external to my organization?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which applications are registered in other tenants?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "List all external apps that are not owned by tenant 84ab7493-cafe-4bfd-b053-539dcd5f4ac0."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me the details for application 02f98b5e-9e76-4af1-a5d4-15aa8c3bb97f."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which app has the clientId 572349ab-c37f-44fc-b450-ecc36acac134?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which application has the appId d8f817a6-cdd0-4574-bd76-8f7370b05d7d?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Get id of service principal 02f98b5e-9e76-4af1-a5d4-15aa8c3bb97f."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Which SP has the clientId 572349ab-c37f-44fc-b450-ecc36acac134?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Find me the service principal that has appId 2f45a324-a5f2-44f1-bbe3-1f3b32f5abde."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me details for these apps: 11111eee-aaaa-bbbb-cccc-222222222222, 33333fff-aaaa-bbbb-cccc-444444444444, and 55555ggg-aaaa-bbbb-cccc-666666666666."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me details for these service principals with object ids 11111eee-aaaa-bbbb-cccc-222222222222, 33333fff-aaaa-bbbb-cccc-444444444444, and 55555ggg-aaaa-bbbb-cccc-666666666666."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "How many applications are there in our tenant?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "What is the total count of the apps?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show number of apps in my tenant."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "How many service principals are currently registered?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Give me the total count of service principals that exist in the environment."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Get the number of enterprise applications in the tenant."
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "List service principals are configured with SAML SSO"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Give me the list of apps with password SSO as their their single-sign-on protocol"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Get the number of enterprise applications with OIDC Single-Sign-On"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "List all apps using SAML"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Show me all apps that have User.ReadWrite.All permissions"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Are there any apps that can write to users?"
+    },
+    {
+      "workload": "ApplicationServicePrincipal",
+      "customerQuestions": "Are any service principals granted permissions to change users in my tenant?"
+    },
+    {
+      "workload": "AuthenticationMethodsPolicy",
+      "customerQuestions": "List all the authentication methods enabled in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethodsPolicy",
+      "customerQuestions": "What are the authentication methods enabled in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethodsPolicy",
+      "customerQuestions": "Authentication methods enabled in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethodsPolicy",
+      "customerQuestions": "Is registration campaign enabled in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethodsPolicy",
+      "customerQuestions": "Is report suspicious activity enabled in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethodsPolicy",
+      "customerQuestions": "Is system preferred authentication enabled in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethodsPolicy",
+      "customerQuestions": "List all authentication strength policies defined in my tenant"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me Conditional Access policies requiring authentication strengths"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "What CA policies use authentication strengths?"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Find Conditional Access policy named policyName"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Do I have a Conditional Access policy named policyName?"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me my Conditional Access policy titled PolicyName"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me enabled Conditional Access Policies requiring MFA"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "What Conditional Access policies are on and require MFA"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "What enabled Conditional Access policies use the Multifactor Authentication grant control?"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "enabled Conditional Access Policies"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "CA Policies currently enforced"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "actively enforced CA Policies"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Conditional Access Policies to enable"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "CA Policies not currently enabled"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Policies I can enable"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Inactive Conditional Access Policies"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Conditional Access Policies"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "list CA policies"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Find CA Policies that do not apply to trusted locations"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me Conditional Access Policies excluding all trusted locations"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Find CA Policies that apply to specific roles"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me Conditional Access Policies scoped to roles"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "What CA policies use roles"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Find Conditional Access Policies that apply to Global Admin"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Find CA Policies that apply to Global Administrators"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me Conditional Access Policies applied to Security Administrators"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "What Authentication Contexts do I have in my tenant?"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me auth contexts"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Are Security Defaults enabled in my organization?"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Are Security Defaults disabled in my organization?"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "Show me Conditional Access (CA) policies requiring domainJoinedDevice"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "What Conditional Access policies require compliantApplication"
+    },
+    {
+      "workload": "ConditionalAccess",
+      "customerQuestions": "List Conditional Access policies requiring MFA"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Find devices by IDs"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me specific devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me enabled devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List active devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Get devices that are non-compliant"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me non-compliant devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List devices that are not compliant"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Get devices that are compliant"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me compliant devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List devices that are compliant"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Get devices where compliance is unknown"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me devices where compliance is unknown"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List devices with isCompliant set to unknown"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Get devices that are managed"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me managed devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List devices under management"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Get devices that are not managed"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me unmanaged devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List devices not under management"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "get devices where the management status is unknown"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me unmanaged devices set to unknown"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List devices where isManaged is unknown"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "how many devices are there?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list the devices with a model of XYZ?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list the devices with a manufacturer of Apple?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are workplace joined"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are WPJ'ed"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are Azure AD registered"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are Entra Id Registered"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me Entra joined devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are Entra Id joined"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are CDJ'ed"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are Azure AD joined"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are cloud device joined"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are Entra Id Hybrid joined"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are Hybrid joined"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list devices that are Azure AD Hybrid joined"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show the count of devices categorized by device type"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List the number of devices under each of the device types"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "How many devices exist for each device trust type"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List stale devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "how many devices are stale"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "which devices were inactive in the last two weeks?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "get all devices where their last activity was 6 months ago"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me jailbroken devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me list of rooted devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me when this device was last active"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "What was the last activity of this device?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "When was this device last used?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me when this device was registered"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "When was this device registered?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Who are the users of this device?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me device users"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "owner of a device"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "list all device's owners"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "manager of a device"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me devices owned by this user"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "What devices does this user have?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me details of this device"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "What is the information about this device?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List all Linux devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Which devices are running macOS?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List all Windows devices"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Get devices with Android"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show me devices with OS version 10.0.26100.2033"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Which devices have version 15.3.1 in their operating system?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Count how many devices running Windows"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Summarize device counts by their windows version"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show the count of windows devices categorized by release"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "count the number of windows devices under each of the os release"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "How many windows devices exist for each windows version"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Which devices are running Windows 11?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Which devices are running Windows 10?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Which devices are running Windows 8?"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "Show the count of devices categorized by os type"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "List the number of devices under each of the os types"
+    },
+    {
+      "workload": "Device",
+      "customerQuestions": "How many devices exist for each device os type"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Which Directory Roles are assigned to user 7b63f2b2-6916-4836-b7ca-0b033fc1f55e"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Which Roles the group 7b63f2b2-6916-4836-b7ca-0b033fc1f55e grants?"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Active directory role assigned to SP 7b63f2b2-6916-4836-b7ca-0b033fc1f55e"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Which PIM roles are currently assigned to user 7b63f2b2-6916-4836-b7ca-0b033fc1f55e"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "list all global admins"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Get Users, Groups, or Service Principals assigned to the Security Reader role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "get users with global admin permissions"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "who has Global Administrator directory role?"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "who has Security Reader directory role?"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "find directory Role definition id"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "directory role id by name"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Directory Role Definition"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "directory Role by template Id"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "directory role by role Definition Id"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "directory role name and description by Id"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Are directory roles assigned to user 2e7aa59d-6f03-4645-9967-2746d909da1d via group or directly?"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Eligible role assignments available for a user"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Which Eligible roles assigned to user"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Which PIM eligible roles assigned to user"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Active role assignments available for a user"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Which active roles assigned to user"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Which PIM active roles assigned to user"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Who has Eligible assignment of Directory Role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Users, Groups, or Service Principals eligible assignment to Role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Eligible assignment of a Role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Who has PIM eligible assignment of a Role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Who has active assignment of Directory Role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Users, Groups, or Service Principals active assignment to Role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Active assignment of a Role"
+    },
+    {
+      "workload": "DirectoryRole",
+      "customerQuestions": "Who has PIM active assignment of a Role"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "how many domains are in my tenant?"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "show all domains in my tenant"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "get details of contoso.com domain"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "show domain configuration for fabrikam.org"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "retrieve info for alpineskihouse.co"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "what objects or resources reference contoso.com"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "get all domain name references for fabrikam.org"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "get service configuration records for contoso.com"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "show configuration records for fabrikam.org"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "get verification DNS records for contoso.com"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "show contoso.com's TXT and MX records"
+    },
+    {
+      "workload": "Domain",
+      "customerQuestions": "what are my initial domain's verification records"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access package assignments does user \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\" have?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access package assignments does user \"Pankaj Kumar\" have?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What assignments are in access package \"c623c371-b8c9-4086-aa68-18052406ca23\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What assignments are in access package \"demo-test-ap-simranmool\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access package assignments are in \"delivered\" state?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What assignments does user \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\" have in access package \"479005e6-155e-4089-b2ca-b0368ef62115\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What assignments does user \"Simran Moolchandaney\" have in access package \"ap 1\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What requests have been made to access package \"479005e6-155e-4089-b2ca-b0368ef62115\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What requests have been made to access package \"demo-test-ap-simranm-319\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access package assignment resource roles does user \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\" have?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access package assignment resource roles does user \"Pankaj Kumar\" have?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are access package \"b5632f2b-ba90-4f43-85e4-4f02f3f26f29\" incompatible groups?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are access package \"test incompatible 2\" incompatible groups?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Which access packages, when assigned, block users from receiving package \"b5632f2b-ba90-4f43-85e4-4f02f3f26f29\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Which access packages, when assigned, block users from receiving package \"test incompatible 2\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access packages is access package \"b5632f2b-ba90-4f43-85e4-4f02f3f26f29\" incompatible with?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access packages is access package \"test incompatible 2\" incompatible with?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What resources are in catalog \"502ba928-bbc3-4236-9cec-e45d235baa6a\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What resources are in \"my team catalog\" catalog?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are the resource details for group \"fb744f09-441e-4cac-bcb6-ec9f469a73be\" in catalog \"9d997198-1a71-45d9-b7f9-ef5293f18829\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Find resource roles for service principal \"e1e6aa69-7fd1-4460-884c-2c0ad7e761d7\" in catalog \"9d997198-1a71-45d9-b7f9-ef5293f18829\""
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are the approval stage details for request \"5c8be42b-ffad-445c-8b66-453b6184f020\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are the access package environment details for \"be0986b9-f1e0-4fd1-af89-339846343848\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What SharePoint environments are there?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Who are the external users of connected org \"7339e462-acc2-4a71-aea1-61bb04071093\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Who are the internal sponsors of connected org \"7339e462-acc2-4a71-aea1-61bb04071093\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Who are the internal sponsors of connected org \"microsoft.com\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Who are the external sponsors of connecetd org \"7339e462-acc2-4a71-aea1-61bb04071093\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Who are the external sponsors of connecetd org \"microsoft.com\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Who are the sponsors of connected org \"7339e462-acc2-4a71-aea1-61bb04071093\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Who are the sponsors of connected org \"microsoft.com\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "How many access package catalogs are there?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Count the total access package catalogs in tenant"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "How many access packages are in the tenant?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access packages are in \"502ba928-bbc3-4236-9cec-e45d235baa6a\" catalog?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What access packages are in \"my team catalog\" catalog?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What resource role scopes are in access package \"b5632f2b-ba90-4f43-85e4-4f02f3f26f29\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What resource role scopes are in access package \"ap 1\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What assignment policies are in access package \"b5632f2b-ba90-4f43-85e4-4f02f3f26f29\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What assignment policies are in access package \"ap 1\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What resource requests have been made?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What custom extensions does catalog \"502ba928-bbc3-4236-9cec-e45d235baa6a\" have?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What custom extensions does \"my team catalog\" catalog have?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are the details of custom extension \"4f15ce20-3a1f-4e25-b286-1f7b4a4875f4\" in catalog \"502ba928-bbc3-4236-9cec-e45d235baa6a\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are the details of custom extension \"4f15ce20-3a1f-4e25-b286-1f7b4a4875f4\" in \"my team catalog\" catalog?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are user \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\" active access package assignments?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are user \"Pankaj Kumar\" active access package assignments?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are user \"04843b82-4aa0-4a61-bcaa-ad5a9eb6fa16\" expired access package assignments?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are user \"Pankaj Kumar\" expired access package assignments?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Search access package that has \"sales\" in display name"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Search access package that has \"sales\" in description"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Search catalog that has \"general\" in display name"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are the \"delivered\" requests to access package \"4f15ce20-3a1f-4e25-b286-1f7b4a4875f4\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "what are the \"delivered\" requests to access package \"ap 1\"?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "What are the active access package assignments?"
+    },
+    {
+      "workload": "EntitlementManagement-prod",
+      "customerQuestions": "Find access package with unique name \"sales\""
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "count groups"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "How many groups"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "nested groups count"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "how many groups are member of group?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Does group has direct members only?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "groups direct members of group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "direct members of group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "is the group cloud-managed"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "check if group is synced from on-prem"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Show me all groups that are not synced from on-premises AD"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Show me all groups that are managed by cloud"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Show me all groups that are source from cloud"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Which Entra ID groups are cloud groups?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "check if a group is on premises or cloud"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "owner of a group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "list all group's owners"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "manager of a group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "is group part of any other group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "check if group is nested inside another group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which devices in group are compliant"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all compliant devices within group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "list all devices in group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me every device associated with group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which groups are nested within group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "can I see all group objects under group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which subgroups exist under the AD group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "does group have any nested groups"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "are there any service principals inside group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "can I see how many service principals are members of"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "is group associated with any application objects"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "how many enterprise application members of group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "how many application members of group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "how many users belong to group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "count the total user memberships for group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "are there any people in group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "provide separate counts for users, groups, devices, and service principals in group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "how many different object types does group have in total"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all user members of group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which users are included in group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Show the count of groups categorized by group type"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "List the number of groups under each of the group types"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "How many groups exist for each group type"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me the membership rules for group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "is the dynamic membership rule currently processing for group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "give me the details of the Retail Delivery group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "fetch the main properties for group 003d8975-e108-490d-a795-81cf17b2d1ce"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all the groups that have already expired"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "list all stale groups past their expiration date"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which groups in our tenant are configured with dynamic membership"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all dynamic groups we have"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "how many Microsoft 365 groups do we have"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me a list of all M365 groups in the tenant"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "retrieve information for groups 003d8975-e108-490d-a795-81cf17b2d1ce, 005dabf5-dfe8-4ca4-97c9-a3b572adef28, and 00740cfe-0a6e-4c03-8c52-13f2475845b7"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which distribution or mail-enabled security groups do we have that are not M365 groups"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all Exchange groups in our tenant"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "list all groups that have no owners assigned"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which Azure AD groups lack an owner in our environment"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all security groups in the tenant"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which groups are security-enabled in our directory"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which groups are not configured for group writeback"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "list all groups that have writeback disabled"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all groups that have writeback turned on"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which groups support writeback in our directory"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "find the groups named"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me any groups named"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which groups in our tenant don't have licenses assigned"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all unlicensed groups"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "get the id of group"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "find groups with in the name"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all groups that are synced from on-premises AD"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "which Entra ID groups are on-premises"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "get all non dynamic groups"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "show me all groups that have assigned membership"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "What is the source of the group?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "List all groups with one owner"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "What groups have only one owner?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "List all groups with more than one owner"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "What groups have more than one owner?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "What groups have multiple owners?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "How many groups have less than 10 users?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Can I filter groups with more than 20 members?"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Show groups with exactly 15 members"
+    },
+    {
+      "workload": "Group",
+      "customerQuestions": "Are there groups with fewer than 5 members?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "List all the supported workflow templates for creating a new workflow"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What templates can be used for creating a joiner Lifecycle workflow?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What are the available templates for onboarding new employees?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What templates can be used for creating a leaver lifecycle workflow?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What templates can be used for creating a mover lifecycle workflow?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me all my deleted workflows"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "List all deleted workflows in my tenant"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "List all disabled Lifecycle workflows in my tenant"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me the details of deleted workflow <workflow name>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which mover tasks can I automate with Lifecycle workflows?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which joiner tasks can I automate with Lifecycle workflows?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which leaver tasks can I automate with Lifecycle workflows?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Get the workflow id for <workflow name>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me workflows whose display name contains <search term>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which tasks can be used to disable AD synced user accounts"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which tasks can be used to delete AD synced user accounts"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What are my current Lifecycle workflow settings?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What settings are available for workflows?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "List all workflow versions for <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me the tasks that are part of version <version #> of <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What is the latest version of <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me the details of <version #> for <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "When was <version #> created for <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Compare <version #> and <version #> of <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Compare the last two versions of <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me the details of <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "what is the trigger and scope for workflow"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What are execution conditions for workflow"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Who created <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me who last modified <workflow>"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Summarize the runs for <workflow> in the last 7 days"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What are the results of workflow 0c3d55f6-8eeb-49a2-9aaa-1db845893b08 in the last 30 days"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me a summary of the task results for <workflow> in the last 7 days"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me the user processing results for <workflow> in the last 7 days"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which users failed to be processed by workflow b378363d-ad69-4526-accb-0ce4fba94086 in the last 7 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What are the task processing results for user <user> in <workflow>?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "How many times did the <workflow> run in the last 24 hours?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "How many users were processed for <workflow> in the last 3 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "How many users were successfully processed by workflows in the last 14 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me which tasks have been executed the most in the last 7 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which workflows failed the most in the last 7 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "How many mover workflows were executed in the last 30 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which workflow category was executed the most in the last 30 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which tasks failed the most in the last 30 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which tasks had the most failed users in the last 7 days?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What custom extensions are configured in lifecycle workflows?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Which task can be used for logic apps?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me the tasks I can configure with Lifecycle workflows?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "What are the available tasks in Lifecycle workflows?"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Give me details of the lifecycle workflow task definition 509589a4-0466-4471-829e-49c5e502bdee"
+    },
+    {
+      "workload": "LifecycleWorkflow",
+      "customerQuestions": "Show me the details of the \"add user\" lifecycle workflow task"
+    },
+    {
+      "workload": "Organization",
+      "customerQuestions": "organization name"
+    },
+    {
+      "workload": "Organization",
+      "customerQuestions": "tenant id"
+    },
+    {
+      "workload": "Organization",
+      "customerQuestions": "organization id"
+    },
+    {
+      "workload": "Organization",
+      "customerQuestions": "active licenses in the tenant"
+    },
+    {
+      "workload": "Organization",
+      "customerQuestions": "technical contact in the tenant"
+    },
+    {
+      "workload": "Organization",
+      "customerQuestions": "security compliance contact in the tenant"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me recently deleted groups"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What groups were deleted recently?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Last deleted groups in my directory"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Who created the Sales Team group?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Find out who created group 005dabf5-dfe8-4ca4-97c9-a3b572adef28"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What groups were created by these users?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show groups created by specific users"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "List all groups created by users 9f101f03-e6b4-4097-ae70-0755dd5c47f3, ab519151-63ea-4338-960e-6346b9640390, 111a1c1d-7758-4528-a775-f5897c828095"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What groups were recently created?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show newest groups"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "List recently added groups"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Which users did this person add to the group?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Who did the user add to this group?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Members added to group by specific user"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Who has been adding users to this group?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Find out who added members to a group"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "List people who added members to group"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Who was recently added to group 005dabf5-dfe8-4ca4-97c9-a3b572adef28?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Who added this specific user to the group?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "When was this user added to the group?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Find out who added user X to group Y"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "When was the last user added to this group?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show most recent addition to group"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Latest member addition to group"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "When was this group last modified?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show latest changes to group"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Last update to this group"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Who updated the authentication method for this user?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Find out who changed MFA settings for user"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Authentication method update history"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show quarantined provisioning jobs"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "List provisioning jobs in quarantine"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What provisioning tasks are quarantined?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Have there been any global secure access audit logs?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What are the last 5 global secure access changes?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me the audit logs for provisioningManagement category."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What are the audit logs associated with provisioning management?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me the audit logs for Sync service."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me audit logs for Account Provisioning service."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me the audit logs for export activity."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me the audit logs initiated by a specific user."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me the audit logs for a specific user."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me the audit logs that affected a specific user."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What is my most recent audit log?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me my audit logs."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show me my audit log activity."
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What are the last 10 self-service password reset activities?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What users have recently performed SSPR?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Which users have completed self-service password reset?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "What audit logs are associated with authentication methods for this user?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Did this user have any changes to authentication methods recently?"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show password resets for user"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Last 5 password resets for user"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "User password reset history"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "List password reset events for user"
+    },
+    {
+      "workload": "AuditLogs",
+      "customerQuestions": "Show why password reset failed for user"
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "Get a list of the authentication methods registered for all users."
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "List all users' authentication method registrations."
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "Which admins are registered for MFA?"
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "Get a list of the authentication methods registered for a user."
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "List details about a specific user's authentication method registration."
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "How many users are registered for each authentication method in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "What is the number of users registered for each authentication method in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "How many users have <method> registered in my tenant"
+    },
+    {
+      "workload": "AuthenticationMethods",
+      "customerQuestions": "What is the number of users that have <method> registered in my tenant"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What are my recent health monitoring alerts?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "show me the health monitoring alerts in my tenant"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me active health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What are my active health monitoring alerts?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "List all active health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me health monitoring alerts between dates"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What are my health monitoring alerts between dates"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "List all health monitoring alerts between dates"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me health monitoring alerts with impacted entities"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What users are impacted from health monitoring alerts?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What applications are impacted from health monitoring alerts?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me health monitoring alert by id"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me health monitoring alert details"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What are my health monitoring alert by id?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What are my health monitoring alert details?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "List all health monitoring alert by id"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "List all health monitoring alert details"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me health monitoring alerts related to mfa sign in failure"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "List all multifactor authentication sign in failure related health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me mfa scenario health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Do I have health monitoring alerts related to mfa?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me managed device health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "What are my managed device health monitoring alerts?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "List all managed device health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me device scenario health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Do I have health monitoring alerts related to device scenario?"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Show me compliant device health monitoring alerts"
+    },
+    {
+      "workload": "HealthMonitoring",
+      "customerQuestions": "Do I have health monitoring alerts related to compliant device?"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "How many Entra P1 licenses do I have?"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Count of P1 Entra licenses"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Number of Microsoft Entra ID P1 licenses"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "What is the usage of Entra P1 Premium license?"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Show me P1 feature utilization"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Entra P1 license usage details"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "How many Entra P2 licenses do I have?"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Count of P2 Entra licenses"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Number of Microsoft Entra ID P2 licenses"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "What is the usage of Entra P2 Premium license?"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Show me P2 feature utilization"
+    },
+    {
+      "workload": "License",
+      "customerQuestions": "Entra P2 license usage details"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List all Entra recommendations"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "Show my tenant's historical Secure Score data"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "Show Entra recommendation 536279f6-15cc-45f2-be2d-61e352b51eef_becRetirement and its details"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "what's the id of unused Enterprise Apps recommendation?"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "Show impacted resource detail of Entra recommendation 99331144-5566-7788-99aa-bb1234eeff99"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List secure score recommendations"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List best practice recommendations"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List high priority entra recommendations"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List medium priority recommendations"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List low priority entra recommendations"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations that are active"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations that are completed"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations that are postponed"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations that are dismissed"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations to improve app portfolio health"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations to reduce surface area risk"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations to improve security posture of my apps"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "List recommendations for tenant configuration"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "What can you recommend to improve my user's security?"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "Which enterprise applications have credentials about to expire?"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "Show me service principals with credentials that are expiring soon"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "Show me applications with credentials that are expiring soon"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "which apps that I am not using?"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "get me list of unused apps"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "list applications with no recent sign-in activity"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "show stale apps"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "how many apps are not used?"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "count unused apps"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "how many stale apps are in my tenant?"
+    },
+    {
+      "workload": "Recommendation",
+      "customerQuestions": "count applications with no recent sign-in activity"
+    },
+    {
+      "workload": "SLA",
+      "customerQuestions": "What is my SLA for Microsoft Entra authentication?"
+    },
+    {
+      "workload": "SLA",
+      "customerQuestions": "What is my Microsoft Entra SLA?"
+    },
+    {
+      "workload": "SLA",
+      "customerQuestions": "SLA of Microsoft Entra authentication"
+    },
+    {
+      "workload": "SLA",
+      "customerQuestions": "Microsoft Entra SLA"
+    },
+    {
+      "workload": "SLA",
+      "customerQuestions": "Show me authentication availability."
+    },
+    {
+      "workload": "SLA",
+      "customerQuestions": "Has my tenant had an SLA breach in the last X months?"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show users signing in from application 3abb4deb-9d3d-4e10-a585-113dcdf862fe"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "List users signing in using OneDrive"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "List users that signed in Outlook"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins without multi-factor authentication"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins with multi-factor authentication"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins with MFA requirement."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins with unsatisfied Conditional Access Policies"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins with failed Conditional Access Policies"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-in failures due to a specific Conditional Access policy"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins with applied conditional access policies"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins with satisfied conditional access policies"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins that have working conditional access policies"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-in activities since a specific time period"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins from non-compliant devices"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins from managed devices"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show logins from specific web browsers"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show logins from specific operating systems"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins from specific locations"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins outside of India"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins not coming from Seattle"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-in activity for a specific user"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "risky sign-ins for user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "risky sign-ins user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b has"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show suspicious login activities"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Display risky sign-ins"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins with risk level"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "How many sign-ins have there been today?"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Count the number of sign-ins."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Count the number users that signed in."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Count the number of applications that signed in."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "What is my most recent signin log?"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show me my sign-in logs."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show me my sign-in activity."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-in failures without interrupts"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-in failures for user dabh52@woodgrove.ms"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-in interrupts"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show signins that were interrupted"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show details about a sign-in with requestId ce3c772b-0f8e-46c6-9fb6-dc340fd65c9f"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show conditional access evaluation for this sign-in requestId."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins from browsers."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins from POP client apps."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show signins from modern client apps."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins that failed due to conditional access block."
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins that were initiated by an agent"
+    },
+    {
+      "workload": "Signin",
+      "customerQuestions": "Show sign-ins that are agentic"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Show me risky apps."
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "What are the highest risk apps in my tenant?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "List risky service principals"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Which apps have the high risk level?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "What are Risky applications?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Show risky enterprise apps"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "list risky apps that are enabled"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "confirm compromised apps"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "apps that are confirmed compromised"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "risky service principals that are confirmed compromised"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Which apps are confirmed compromised and enabled"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Which risky service principals are confirmed compromised"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Provide me risk history for the service principal with ID 24fc6665-00c3-44a4-9f47-305776da2a54."
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "What are the risk detection history for the service principal with Appid 0b50e6f1-b5b5-44a5-be3c-ceae51f6a041?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "How many risky apps do I have in my tenant."
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Count highest risk apps in my tenant."
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Count risky service principals"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "How many apps have the high risk level?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "How many Risky applications?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Count risky enterprise apps"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Were there any failed sign-ins to risky apps?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Are there any expired client secrets for risky apps?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Are any apps from outside my tenant risky?"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Are there any risky apps that were modified during the past 7 days"
+    },
+    {
+      "workload": "RiskyServicePrincipal",
+      "customerQuestions": "Show applications that are considered risky and have elevated permissions"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "show me risky users"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "list users at risk"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "confirm compromised users"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "users that are confirmed compromised"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risky users that are confirmed compromised"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "Which users are confirmed compromised"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "Which risky users are confirmed compromised"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "users that are confirmed safe"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risky users that are confirmed safe"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "Which users are confirmed safe"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "Which risky users are confirmed safe"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b risk history"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "why user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b at risk"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risk history for user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "was user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b ever risky"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "has user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b been at risk"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "was user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b at Risk in the past"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risk information for users 17d32ea9-6f0f-437b-8d9d-88dc0d73234b, 254c7ac9-b0f2-4c17-b0b3-8b195ae9d7fd and 48f410c2-e096-4a8e-aa8d-03dcfa456c50"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "what is the risk level for inch48@woodgrove.ms, dahb46@woodgrove.ms and adelev22@woodgrove.ms?"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risk information for user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "what is the user inch48@woodgrove.ms risk level?"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risk details for user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risks for user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risk detections for user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "what risks does the user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b have"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "what are the risks for user 17d32ea9-6f0f-437b-8d9d-88dc0d73234b"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "how many risky users"
+    },
+    {
+      "workload": "RiskyUser",
+      "customerQuestions": "risky users count"
+    },
+    {
+      "workload": "SubscribedSku",
+      "customerQuestions": "list tenant licenses"
+    },
+    {
+      "workload": "SubscribedSku",
+      "customerQuestions": "licenses of organization"
+    },
+    {
+      "workload": "SubscribedSku",
+      "customerQuestions": "list of license"
+    },
+    {
+      "workload": "SubscribedSku",
+      "customerQuestions": "license names Sku Ids"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "last deleted users"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "recently deleted users"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "tell me about the deleted user Nina Smith"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "who am I?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "tell me about myself"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "List all the groups I am a member of"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "What groups I have a direct member of"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "What groups I have joined directly"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "what groups do I own?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list groups owned by user bfc68432-20ab-4ee8-a609-5924f112ca0c"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "how many groups do I own?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "count the groups owned by user bfc68432-20ab-4ee8-a609-5924f112ca0c"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Which groups is user bfc68432-20ab-4ee8-a609-5924f112ca0c a member of?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "transitive reports"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "all reports of manager user"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "all users reporting to manager"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "user Authentication Methods"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "who is Abigail Brown's manager?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "users without assigned licenses"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "users not in the Contoso company"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "users with @hotmail.com mail domain"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "users not starting with John"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "user with john.smith@hotmail.com as other email"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "user with phone number +1-555-555-5555"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Who are the last 5 created users?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "List the recently created users"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "users in Finance department"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Find Rory from Customer XP department"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "search for user Adele Vance"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "what's the user id of  Abigail Brown?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "get the user with mail nickname dabh52"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "which user has dabh52@woodgrove.ms as email?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "get details about user dabh52@woodgrove.ms"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "find the user with dabh52@woodgrove.ms as UPN"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Get all details of John Doe"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "provide every info on dabh52@woodgrove.ms"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "tell about John Doe"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Get the user with id 5ec38251-7990-425b-9421-d03226450aa6"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "get users detals with ids db9c5e63-2a70-41ea-a2b4-6b49549d19c2, 31168c03-9cce-4a70-b747-28379690f074, and 5ec38251-7990-425b-9421-d03226450aa6"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "When did the user last change their password?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "users with Intune A license"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "all users with M365 Copilot license assigned"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "How many users are in the tenant?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Count all users"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "How many guest users are in my tenant?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "how many guest users were created since last week?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "When was the user created?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "How was the user account created?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Which Domain has the user been invited from?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "who reports to Alice Vance?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "give me all the users reporting to Alice Vance"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "get all users with manager 013b7b1b-5411-4e6e-bdc9-c4790dae1051"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show external users"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show all internal users"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "are there any external users?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "are there any internal users?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list users with AR as usage location"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show all users with usage location United States"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show users from United States"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show users in country FR"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list users from Canada"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "what licenses are assigned to Abigail Brown?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show all licenses for user dabh52@woodgrove.ms"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "get license names of user with UPN dabh52@woodgrove.ms"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list users with domain parkcity.myhouse.co in UPN"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show all users with UPN ending in @contoso.com"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "find users UPN using the domain fabrikam.org"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "when did Abigail Brown last sign in?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "get last sign-in time for dabh52@grove.com"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show sign-in activity for user bfc68432-20ab-4ee8-a609-5924f112ca0c"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "find users in Seattle"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list users in Redmond"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show users from California"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list users located in Washington state"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "show users from TX"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "when was Abigail Brown hired?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "get employee hire date for dabh52@woodgrove.ms"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "what is the date of when dabh52@woodgrove.ms was hired"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Is ducu57@woodgrove.ms enabled for system preferred authentication"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "What is ducu57@woodgrove.ms system preferred authentication method"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Is ducu57@woodgrove.ms enabled for per user MFA"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "What is ducu57@woodgrove.ms per user multifactor authentication state"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Show me all security groups that I'm a direct member of"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "which security groups is user 013b7b1b-5411-4e6e-bdc9-c4790dae1051 a member of?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Show me all m365 groups that I'm a member of"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list the unified groups where user 013b7b1b-5411-4e6e-bdc9-c4790dae1051 is a member"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "which m365 groups is user 013b7b1b-5411-4e6e-bdc9-c4790dae1051 a member of?"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "Show me all dynamic groups that I'm a member of"
+    },
+    {
+      "workload": "User",
+      "customerQuestions": "list the dynamic groups where user 013b7b1b-5411-4e6e-bdc9-c4790dae1051 is a member"
+    }
+  ]

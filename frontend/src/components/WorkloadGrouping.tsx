@@ -1,10 +1,17 @@
+// WorkloadGrouping.tsx
+
 import React, { useEffect, useState } from 'react';
 import StatsPanel from './StatsPanel';
 import WorkloadFilters from './WorkloadFilters';
 
+interface QuestionItem {
+  original: string;
+  display: string;
+}
+
 interface WorkloadGroup {
   workload: string;
-  questions: string[];
+  questions: QuestionItem[];
 }
 
 let _cache: WorkloadGroup[] | null = null;
@@ -51,7 +58,7 @@ export default function WorkloadGrouping() {
       filter.length === 0 ||
       filter.some(f => g.workload === f || g.workload.startsWith(f + '.'))
     )
-    .sort((a, b) => b.questions.length - a.questions.length); // sort descending
+    .sort((a, b) => b.questions.length - a.questions.length);
 
   return (
     <div>
@@ -81,7 +88,10 @@ export default function WorkloadGrouping() {
                 ) : (
                   <ul className="list-disc list-inside max-h-48 overflow-y-auto space-y-1">
                     {g.questions.map((q, i) => (
-                      <li key={i} className="text-sm text-gray-700">{q}</li>
+                      <li key={i} className="text-sm text-gray-700">
+                        {q.display}
+                        {q.display !== q.original ? ' (translated)' : ''}
+                      </li>
                     ))}
                   </ul>
                 )}
@@ -93,4 +103,3 @@ export default function WorkloadGrouping() {
     </div>
   );
 }
-

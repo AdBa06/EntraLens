@@ -1,10 +1,11 @@
-// errorgrouping.tsx
+// ErrorGrouping.tsx
 
 import React, { useEffect, useState } from "react";
 import WorkloadFilters from "./WorkloadFilters";
 
 interface ErrorItem {
-  question: string;
+  // question may now be either a string or the translated-object
+  question: string | { original: string; display: string };
   errors: string[];
 }
 
@@ -22,10 +23,9 @@ let _cache: ErrorGroup[] | null = null;
 export default function ErrorGrouping() {
   const [groups, setGroups] = useState<ErrorGroup[] | null>(_cache);
   const [error, setError] = useState<string | null>(null);
-  const [filter, setFilter] = useState<string[]>([]);  
+  const [filter, setFilter] = useState<string[]>([]);
   const [summaries, setSummaries] = useState<SummariesMap>({});
 
-  // Fetch the precomputed groups
   useEffect(() => {
     if (_cache) return;
     fetch("/api/error-grouping/default")
@@ -41,7 +41,6 @@ export default function ErrorGrouping() {
       .catch((e) => setError(e.message));
   }, []);
 
-  // On-demand summarization
   useEffect(() => {
     if (!groups) return;
     groups.forEach((g) => {
@@ -113,16 +112,24 @@ export default function ErrorGrouping() {
                     {summaries[g.workload] || "Summarizing errors…"}
                   </p>
                 </div>
-                {g.items.map((it, i) => (
-                  <div key={i}>
-                    <p className="font-medium text-gray-900 mb-1">{it.question}</p>
-                    <ul className="list-disc list-inside ml-4 space-y-1">
-                      {it.errors.map((e, j) => (
-                        <li key={j} className="text-sm text-gray-700">{e}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                {g.items.map((it, i) => {
+                  // support translated object or plain string
+                  const q = it.question;
+                  const text = typeof q === "object" ? q.display : q;
+                  const showTranslated = typeof q === "object" && q.display !== q.original;
+                  return (
+                    <div key={i}>
+                      <p className="font-medium text-gray-900 mb-1">
+                        {text}{showTranslated ? " (translated)" : ""}
+                      </p>
+                      <ul className="list-disc list-inside ml-4 space-y-1">
+                        {it.errors.map((e, j) => (
+                          <li key={j} className="text-sm text-gray-700">{e}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
                 {g.items.length === 0 && (
                   <p className="text-gray-600">No errors recorded for this workload.</p>
                 )}

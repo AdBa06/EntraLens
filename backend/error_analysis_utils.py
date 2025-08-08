@@ -52,59 +52,126 @@
 # error_analysis_utils.py
 
 
+# # error_analysis_utils.py
 
-import os
+# import os
+# import pandas as pd
+# from typing import List, Dict
+# from classification_utils import classify_workloads
+
+# def analyze_errors(
+#     questions: List[str],
+#     errors_path: str
+# ) -> List[Dict]:
+#     """
+#     Mode 3: 
+#       1) classify each question into a workload (using classify_workloads)
+#       2) read errors.xlsx which has:
+#            - PromptContent (the question text)
+#            - SkillOutput   (the error message)
+#       3) for each question, always emit exactly one entry in 'errors'.
+#          If no real error, we use 'No error recorded' placeholder.
+#       4) Assemble per-workload output.
+#     """
+
+#     # 1) Classify into workloads
+#     wl_groups = classify_workloads(questions)
+
+#     # 2) Load your Excel sheet
+#     df = pd.read_excel(errors_path)
+#     if "PromptContent" not in df.columns or "SkillOutput" not in df.columns:
+#         raise ValueError("errors.xlsx must contain 'PromptContent' and 'SkillOutput' columns.")
+
+#     # 3) Build map: PromptContent -> SkillOutput
+#     records = df[["PromptContent", "SkillOutput"]].to_dict(orient="records")
+#     error_map: Dict[str, str] = {
+#         rec["PromptContent"]: rec["SkillOutput"]
+#         for rec in records
+#     }
+
+#     # 4) Assemble per-workload output
+#     output: List[Dict] = []
+#     for entry in wl_groups:
+#         wl    = entry["workload"]
+#         qs    = entry["questions"]
+#         items = []
+#         for q in qs:
+#             raw_err = error_map.get(q)
+#             items.append({
+#                 "question": q,
+#                 # always one entry per question
+#                 "errors": [ raw_err if raw_err is not None else "No error recorded" ]
+#             })
+#         output.append({
+#             "workload": wl,
+#             "items": items
+#         })
+
+#     return output
+
+
+# error_analysis_utils.py
+
 import pandas as pd
-from typing import List, Dict
+from typing import List, Dict, Any
 from classification_utils import classify_workloads
 
 def analyze_errors(
     questions: List[str],
     errors_path: str
-) -> List[Dict]:
+) -> List[Dict[str, Any]]:
     """
-    Mode 3: 
-      1) classify each question into a workload (using classify_workloads)
-      2) read errors.xlsx which has:
-           - PromptContent (the question text)
-           - SkillOutput   (the error message)
-      3) for each row, map that exact PromptContent → SkillOutput
-      4) for each workload, emit items = [{ question, errors: [SkillOutput] }, …]
+    Mode 3 grouping: now safely handles missing SkillInput/SkillOutput
+    by converting any NaN to empty strings.
     """
 
-    # 1) Classify into workloads
+    # 1) classify into workloads
     wl_groups = classify_workloads(questions)
 
-    # 2) Load your Excel sheet
+    # 2) load the errors sheet
     df = pd.read_excel(errors_path)
-    # Validate columns
-    if "PromptContent" not in df.columns or "SkillOutput" not in df.columns:
-        raise ValueError("errors.xlsx must contain 'PromptContent' and 'SkillOutput' columns.")
+    required = {"PromptContent", "SkillInput", "SkillOutput"}
+    if not required.issubset(df.columns):
+        raise ValueError(f"errors.xlsx must contain columns: {required}")
 
-    # 3) Build direct map: PromptContent -> SkillOutput
-    #    (if the same PromptContent appears multiple times, last one wins; 
-    #     wrap into list for frontend consistency)
-    records = df[["PromptContent", "SkillOutput"]].to_dict(orient="records")
-    error_map: Dict[str, str] = {
-        rec["PromptContent"]: rec["SkillOutput"]
-        for rec in records
-    }
+    # 3) build clean maps (no NaN)
+    records = df[["PromptContent", "SkillInput", "SkillOutput"]].to_dict(orient="records")
+    input_map:  Dict[str, str] = {}
+    output_map: Dict[str, str] = {}
+    for rec in records:
+        key = rec["PromptContent"]
+        # coerce NaN to ""
+        si = rec.get("SkillInput", "")
+        so = rec.get("SkillOutput", "")
+        if pd.isna(si):
+            si = ""
+        if pd.isna(so):
+            so = ""
+        input_map[key]  = str(si)
+        output_map[key] = str(so)
 
-    # 4) Assemble per-workload output
-    output: List[Dict] = []
+    # 4) assemble per‐workload
+    output: List[Dict[str, Any]] = []
     for entry in wl_groups:
-        wl = entry["workload"]
-        qs = entry["questions"]
+        wl    = entry["workload"]
+        qs    = entry["questions"]
         items = []
-        for q in qs:
-            err = error_map.get(q)
+        for q_item in qs:
+            # extract original text if q_item is object
+            if isinstance(q_item, dict) and "original" in q_item:
+                orig = q_item["original"]
+            else:
+                orig = q_item
+
             items.append({
-                "question": q,
-                "errors": [err] if err is not None else []
+                "question":     q_item,
+                "skill_input":  input_map.get(orig, ""),
+                "skill_output": output_map.get(orig, "")
             })
+
         output.append({
             "workload": wl,
-            "items": items
+            "items":    items
         })
 
     return output

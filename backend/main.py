@@ -2,7 +2,7 @@
 
 import os
 import json
-import traceback                # <— import traceback
+import traceback
 from dotenv import load_dotenv
 import pandas as pd
 from fastapi import FastAPI, HTTPException
@@ -28,10 +28,13 @@ app.add_middleware(
 
 _intent_cache: List[Dict] = []
 _intent_mtime: float = 0.0
+_source_map: Dict[str, str] = {}
 _workload_cache: List[Dict] = []
+
 
 class Questions(BaseModel):
     customer_questions: List[str]
+
 
 class ErrorSummarizeRequest(BaseModel):
     workload: str
@@ -40,26 +43,54 @@ class ErrorSummarizeRequest(BaseModel):
 
 @app.on_event("startup")
 def preload_intents_and_workloads():
+    global _intent_cache, _intent_mtime, _source_map, _workload_cache
+
     base = os.path.dirname(__file__)
     path = os.path.join(base, "data", "synthetic_data.xlsx")
     print("[startup] Loading synthetic_data.xlsx for Modes 1 & 2 at", path)
-    if os.path.exists(path):
-        try:
-            df = pd.read_excel(path)
-            qs = df["customer_questions"].dropna().astype(str).tolist()
-            global _intent_mtime, _intent_cache, _workload_cache
-            _intent_mtime = os.path.getmtime(path)
-            print(f"[startup]  • Clustering {len(qs)} questions…")
-            _intent_cache = cluster_intents(qs)
-            print(f"[startup]  ✓ Mode 1: {_intent_cache.__len__()} clusters cached")
-            print(f"[startup]  • Workload-grouping on same data…")
-            _workload_cache = classify_workloads(qs)
-            print(f"[startup]  ✓ Mode 2: {_workload_cache.__len__()} workload groups cached")
-        except Exception as e:
-            print(f"[startup]  ✗ Failed preload:")
-            traceback.print_exc()
-    else:
+    if not os.path.exists(path):
         print("[startup]  ✗ synthetic_data.xlsx not found, skipping Modes 1 & 2")
+        return
+
+    try:
+        df = pd.read_excel(path)
+        df2 = df.dropna(subset=["customer_questions", "copilot_source"])
+        qs   = df2["customer_questions"].astype(str).tolist()
+        srcs = df2["copilot_source"].astype(str).tolist()
+        _source_map = dict(zip(qs, srcs))
+
+        _intent_mtime = os.path.getmtime(path)
+        print(f"[startup]  • Clustering {len(qs)} questions…")
+        raw_clusters = cluster_intents(qs)
+
+        enhanced_clusters = []
+        for c in raw_clusters:
+            new_qs = []
+            for q in c["questions"]:
+                q["source"] = _source_map.get(q["original"], "unknown")
+                new_qs.append(q)
+            c["questions"] = new_qs
+            enhanced_clusters.append(c)
+        _intent_cache = enhanced_clusters
+        print(f"[startup]  ✓ Mode 1: {len(_intent_cache)} clusters cached")
+
+        print(f"[startup]  • Workload-grouping on same data…")
+        raw_wl = classify_workloads(qs)
+
+        enhanced_wl = []
+        for g in raw_wl:
+            new_qs = []
+            for q in g["questions"]:
+                q["source"] = _source_map.get(q["original"], "unknown")
+                new_qs.append(q)
+            g["questions"] = new_qs
+            enhanced_wl.append(g)
+        _workload_cache = enhanced_wl
+        print(f"[startup]  ✓ Mode 2: {len(_workload_cache)} workload groups cached")
+
+    except Exception:
+        print(f"[startup]  ✗ Failed preload:")
+        traceback.print_exc()
 
 
 @app.get("/api/intent-analysis/info")
@@ -70,32 +101,18 @@ def intent_analysis_info():
 @app.post("/api/intent-analysis")
 def intent_analysis(q: Questions):
     try:
-        return cluster_intents(q.customer_questions)
-    except Exception as e:
-        print("[intent-analysis] ERROR:")
+        clusters = cluster_intents(q.customer_questions)
+        return clusters
+    except Exception:
         traceback.print_exc()
-        raise HTTPException(500, detail=str(e))
+        raise HTTPException(500, detail="Clustering failed")
 
 
 @app.get("/api/intent-analysis/default")
 def intent_analysis_default():
-    global _intent_cache
-    try:
-        if not _intent_cache:
-            base = os.path.dirname(__file__)
-            path = os.path.join(base, "data", "synthetic_data.xlsx")
-            if os.path.exists(path):
-                df = pd.read_excel(path)
-                qs = df["customer_questions"].dropna().astype(str).tolist()
-                _intent_cache = cluster_intents(qs)
-            else:
-                raise RuntimeError("No synthetic_data.xlsx found for default clusters")
-        return _intent_cache
-
-    except Exception as e:
-        print("[intent-analysis/default] ERROR:")
-        traceback.print_exc()
-        raise HTTPException(500, detail=str(e))
+    if not _intent_cache:
+        raise HTTPException(500, detail="Intent cache not populated on startup")
+    return _intent_cache
 
 
 @app.post("/api/workload-grouping")
@@ -106,7 +123,7 @@ def workload_grouping(q: Questions):
 @app.get("/api/workload-grouping/default")
 def workload_grouping_default():
     if not _workload_cache:
-        raise HTTPException(500, "Workload groups not preloaded")
+        raise HTTPException(500, detail="Workload groups not preloaded")
     return _workload_cache
 
 
@@ -132,23 +149,39 @@ def error_grouping(q: Questions):
 
 @app.post("/api/error-summarize")
 def error_summarize(req: ErrorSummarizeRequest):
+    """
+    Ask the LLM to assign each raw error message a short label, returning
+    a JSON array of labels of the same length as the input list.
+    Counting is done in code.
+    """
     prompt = (
-        f"You are an expert at identifying themes in error logs.\n"
-        f"Workload: {req.workload}\n"
-        "Errors:\n" +
-        "\n".join(f"- {e}" for e in req.errors) +
-        "\n\nPlease provide a concise paragraph summarizing the common issues."
+        "You are an expert at categorizing error messages.\n"
+        f"Workload: {req.workload}\n\n"
+        "Here are the raw errors (one per line):\n"
+        + "\n".join(req.errors)
+        + "\n\n"
+        "Please return ONLY a JSON array of short labels (max 5 words each), "
+        "with one label for each error in the same order as input. "
+        "Do NOT include counts or any extra text.\n"
+        'Example: ["Timeout", "Null reference", "Timeout", "Placeholder missing"]'
     )
+
     messages = [
-        {"role": "system", "content": "Summarize error patterns for Azure workloads."},
-        {"role":   "user", "content": prompt}
+        {"role": "system", "content": "You are a JSON-only assistant."},
+        {"role": "user",   "content": prompt}
     ]
+
     try:
         resp = client.chat.completions.create(
             model=CHAT_COMPLETION_MODEL,
             messages=messages
         )
-        summary = resp.choices[0].message.content.strip()
-    except Exception as e:
-        summary = f"Error generating summary: {e}"
-    return {"summary": summary}
+        raw = resp.choices[0].message.content.strip()
+        raw = raw.lstrip("```json").rstrip("```").strip()
+        labels = json.loads(raw)
+        if not isinstance(labels, list):
+            raise ValueError("Expected a JSON array")
+    except Exception:
+        labels = []
+
+    return {"labels": labels}
